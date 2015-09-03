@@ -12,13 +12,13 @@ class GitPr
     @response = http.request(request)
     pull = JSON.parse(@response.body)
     pulls = []
-    pull.each do |p|
-      @title = p["title"]
-      @creator = p["user"]["login"]
-      @updated = p["updated_at"]
-      
-      pulls << {"title" => @title, "creator" => @creator, "updated at" => @updated}
-    end
-     pulls
+      pull.each do |p|
+        @title = p["title"]
+        @creator = p["user"]["login"]
+        @updated = p["updated_at"]
+        
+        pulls << {"title" => @title, "creator" => @creator, "updated at" => @updated}
+      end
+    pulls
   end
 end
