@@ -4,7 +4,7 @@
 
 ## Usage
 
-GitPr.git_open_pr("organisation_name", "access_token", "repo_name")
+GitPr.github_pr("organisation_name", "access_token", "repo_name")
 
 ## Example
 
