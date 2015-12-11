@@ -1,7 +1,6 @@
 require 'uri'
 require 'net/http'
 require 'json'
-require 'pry'
 
 class GitPr
   def self.github_pr(organisation_name, access_token, repo_name)
